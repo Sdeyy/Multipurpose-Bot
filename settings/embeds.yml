@@ -1,0 +1,97 @@
+Embeds:
+  MULTI_BUTTONS_TICKETS: 
+    Title: "**`🎫` TICKET SYSTEM**" # Placeholders <botName>
+    Description: "If you need help from a staff member click on the buttons below depending on what you need!\n\n<ticketPanel>\n\n"
+    Footer: "<botName> Ticket System"
+    Timestamp: true
+    Banner: "https://images-ext-2.discordapp.net/external/sAxfSz7vTKZzuVNqAPWVrAsWOSEe_NAFVxobjHZd9Oc/https/media.discordapp.net/attachments/859542371692052500/949906479908020255/standard.gif"
+    messagePanel: "Click on the icon"
+
+  ONE_BUTTON_TICKETS: 
+    Title: "**`🎫` TICKET SYSTEM**" # Placeholders <botName>
+    Description: "If you need help, click on the button to be assisted by a member of the staff team!\n\n**__NOTE__**\n`➥` Be patient and don't tag the staff.\n`➥` Provide a reason why you opened the ticket."
+    Footer: "<botName> | Ticket System"
+    Timestamp: false
+    Banner: "https://images-ext-2.discordapp.net/external/sAxfSz7vTKZzuVNqAPWVrAsWOSEe_NAFVxobjHZd9Oc/https/media.discordapp.net/attachments/859542371692052500/949906479908020255/standard.gif" 
+  
+  ONE_BUTTON_TICKET_OPEN:
+    Title: "**`🎫` TICKET SYSTEM**"
+    Description: "Thank you for contacting the staff team, select one of the options below depending on what you need!"
+    Footer: "<botName> | Ticket System"
+    Timestamp: false
+
+  DROPDOWN_TICKET_PANEL:
+    Title: "**`🎫` TICKET SYSTEM**"
+    Description: "To open a ticket click on the menu below and select the option you need!"
+    Footer: "<botName> | Ticket System"
+    Timestamp: false
+    Banner: "" 
+
+
+  TICKET_OPEN_REASON_ENABLED:
+    Title: "**`🎫` TICKET SYSTEM**"
+    Description: "Thank you for contacting the support team, wait patiently for a staff to assist you, remember **do not ping staff members**!\n\n**📋 | Ticket Reason:**\n<ticketReason>\n\n**🕛 | Creation Date**\n<creationDate>\n\nIf you do not reply to a ticket in under __12 hours__, your ticket may be closed!"
+    Footer: "<botName> | Ticket System"
+    Thumbnail: "<guildImage>" # <guildImage>
+    Timestamp: false
+
+  TICKET_OPEN_REASON_DISABLED:
+    Title: "**`🎫` TICKET SYSTEM**"
+    Description: "Thank you for contacting the support team, wait patiently for a staff to assist you, remember **do not ping staff members**!\n\n**🕛 | Creation Date**\n<creationDate>\n\nIf you do not reply to a ticket in under __12 hours__, your ticket may be closed!"
+    Footer: "<botName> | Ticket System"
+    Thumbnail: "<guildImage>" # <guildImage>
+    Timestamp: false
+
+  TICKET_REVIEW:
+    Title: "**`⭐` TICKET REVIEW**"
+    Description: "If you like you can add a rating to the attention of the staff <staffTag> team by clicking the menu below!"
+    Footer: "<botName> | Ticket Review"
+    Timestamp: false
+
+  TICKET_REVIEWED: 
+    Title: "**`⭐` TICKET REVIEW**"
+    Description: "Thank you for giving a review to the staff team!\n\nStaff: <staffTag>\nStars: <stars>"
+    Footer: "<botName> | Ticket Review"
+    Timestamp: false
+
+  TICKET_REVIEW_LOG: 
+    Title: "**`⭐` NEW TICKET REVIEW**"
+    Description: "**User**\n<userMention> ||<userID>||\n\n**Ticket Rating**\nStaff: <staffTag>\n<stars> <totalStars>"
+    Footer: "<botName> | Ticket Review"
+    Timestamp: false
+
+  SETUP_COUNTERS:
+    Title: "**`📊` TICKET COUNTER**"
+    Description: "Channels for counters successfully created!"
+
+  BLACKLIST_WORDS:
+    Color: "RED"
+    Title: "**`🔨` Blacklist Words**"
+    Description: "Hey <userTag>, That word is forbidden on this server, don't use it or you will be penalized!" # <userTag>
+    
+  VERIFY_SUCCESSFULY:
+    Color: "GREEN"
+    Title: "**`✅` Verification System**"
+    Description: "You were successfully verified!"
+
+
+  ALREADY_VERIFIED:
+    Color: "RED"
+    Title: "**`❌` Verification System**"
+    Description: "You are already verified!"
+
+  SUGGESTION_SYSTEM:
+    VIEW_VOTES:
+      Title: "**`📃` Suggestion Votes**"
+      upVotes: "upVotes"
+      downVotes: "downVotes"
+      noVotes: "No Votes"
+
+  ECONOMY_BALANCE: 
+    Author: "<userTag> Balance" 
+    Description: "💵 **Money:** `<coinsMoney> coins`\n🏦 **Bank:** `<bankMoney> coins`" 
+
+  NO_PERMSUSER:
+    TITLE: "NO PERMISSIONS"
+    DESCRIPTION: "You do not have permission to use this command."
+    COLOR: "RED"

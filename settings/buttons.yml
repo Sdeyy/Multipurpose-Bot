@@ -1,0 +1,50 @@
+# STYLES: PRIMARY, SECONDARY, DANGER, SUCCESS
+
+MULTI_BUTTONS_TICKETS:
+  Style: "PRIMARY"
+
+ONE_BUTTON_TICKETS: 
+  Style: "PRIMARY"
+  Label: "Create Ticket"
+  Emoji: "🎫"
+
+TICKETS_GENERAL_BUTTONS: 
+   Close:
+    Style: "DANGER"
+    Label: "Close"
+    Emoji: "🔒"
+   Claim: 
+    Style: "PRIMARY"
+    Label: "Claim"
+    Emoji: "🙋‍♂️"
+   Transcript: 
+    Style: "SECONDARY"
+    Label: "Transcript"
+    Emoji: "📑"
+   Re_Open:
+    Style: "PRIMARY"
+    Label: "Re-Open"
+    Emoji: "🔓"
+   Delete: 
+    Style: "DANGER"
+    Label: "Delete"
+    Emoji: "⛔"
+
+TICKET_REVIEW_MENU:
+  Label: "Ticket Review"
+  Emoji: "⭐" 
+  Description: "<starNumber>" # <starNumber>
+
+ECONOMY_LEADERBOAD:
+  BUTTON_PREVIOUS:
+    Style: "SUCCESS"
+    Label: "Previous"
+    Emoji: "929001012176507040"
+  BUTTON_MAIN:
+    Style: "DANGER"
+    Label: "Main"
+    Emoji: "🏠"
+  BUTTON_NEXT: 
+    Style: "SUCCESS"
+    Label: "Next"
+    Emoji: "929001012461707335"

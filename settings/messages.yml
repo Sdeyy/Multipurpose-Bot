@@ -1,0 +1,119 @@
+##########################################
+#              Bot Messages              #
+##########################################
+
+NO_PERMSBOT: "I don't have permissions."
+NO_PERMSUSER: "You do not have permission to use this command."
+NO_PERMSROLEHIGHER: "I can't add that role, it's higher than my highest role."
+DISABLED_COMMAND: "This command is disabled."
+
+##########################################
+#             Ticket Messages            #
+##########################################
+
+TICKET: 
+  NO_PERMS: "You **DO NOT** have permission to use this feature"
+  TICKET_CLOSED_BY: "The ticket was closed by"
+  TICKET_CREATING: "Creating ticket...."
+  ONE_BUTTON_TICKET_CREATING: "The category has been selected successfully..."
+  ONE_BUTTON_TICKET_DISABLED: "This ticket panel is currently disabled."
+  TICKET_CREATED: "Ticket Created <channel>" # Placeholders <channel>
+  WHAT_DO_YOU_WANT: "¿What do you want to do?"
+  TICKET_CONFIRMATION: "Are you sure you want to close the ticket?"
+  TICKET_CLAIMED: "The ticket was claimed by <user>" # Placeholders: <user>
+  TICKET_REOPEN: "The ticket war reopen by"
+  TICKET_CLOSED: "The ticket was closed by <user>" # Placeholders <user>
+  TICKET_RENAMED: "The ticket was renamed to: <rename>"
+  TICKET_DELETED: "Hey <user>, the ticket will be deleted in 5 seconds!"
+  NO_TICKET: "Hey <user>, this channel is not a ticket!"
+  ALREADY_OPEN: "❌ | You already have a ticket created!"
+  ALERT_MESSAGE: "Hey <user>, you have 5 minutes to answer the ticket, otherwise it will be closed!"
+  ALERT_SENT: "<user> was notified correctly, if you do not respond within 5 minutes your ticket will be closed"
+TICKET_REASON:
+  LABEL: "For what reason will you create a ticket?"
+  PLACEHOLDER: "What is the reason why you will create a ticket?"
+
+##########################################
+#             Verify Messages            #
+##########################################
+
+VERIFY:
+  PANEL_SENT: "The panel was successfully sent to the channel <channel>."
+  ALREADY_VERIFIED: "❌ | You are already verified!"
+
+##########################################
+#          Reaction-Role Messages        #
+##########################################
+
+REACTION_ROLES: # Placeholders <role>
+  REMOVED_TITLE: "Role removed" 
+  REMOVED_DESCRIPTION: "Successfuly removed <role>"
+  ADDED_TITLE: "Role Added"
+  ADDED_DESCRIPTION: "Successfuly added <role>"
+
+##########################################
+#              Music Messages            #
+##########################################
+  
+MUSIC:
+  PLAYING_NOW: "Playing now: **<songName>**" # <songName>
+  SONG_ADDED: "Song added to the playlist: **<songName>**" # <songName>
+
+##########################################
+#         Bug Report Messages            #
+##########################################
+
+BUG_REPORT:
+  PANEL_SENT: "The panel was successfully sent to the channel <channel>."
+
+##########################################
+#              Roles Messages            #
+##########################################
+
+ROLES:
+  SUCCESS:
+    ADDED:
+      TITLE: "Successfully added role"
+      DESCRIPTION: "<role> role has been added to <user>" # <role> <user> 
+    REMOVED: 
+      TITLE: "Successfully removed role"
+      DESCRIPTION: "<role> role has been removed to <user>" # <role> <user>
+  ALREADY: "<user> already has <role> role." # <role> <user> 
+  NO_HAVE_ROLE: "<user> does not have the role <role>." # <role> <user>
+  
+
+##########################################
+#            Economy Messages            #
+##########################################
+
+ECONOMY:
+  BOTS_MONEY: "❌ | **Bots can't have money!**"
+  USER_NOT_REGISTERED: "This user is not registered in the bank."
+  BET_NOT_SPECIFIED: "❌ **You have not specified a valid amount to bet!**"
+  NO_MONEY: "❌ **You don't have that much money to bet!**"
+  BET_WIN: "**You have earned `<amount> coins`**"
+  BET_LOST: "**You have lost `<amount> coins`**"
+  DAILY_COOLDOWN: "🕑 **You have to wait `<time>` to reclaim your daily reward!**"
+  DAILY_CLAIMED: "✅ **You have claimed your daily reward of `<amount> coins`!**"
+  DEPOSIT_INVALID_AMOUNT: "❌ **You have not specified a valid amount to deposit!**"
+  DEPOSIT_NO_MONEY: "❌ **You don't have that much money to deposit!**"
+  SUCCESSFULY_DEPOSITED: "✅ **You have deposited  `<amount> coins` in your bank!**"
+  CANNOT_STEAL: "❌ **You can't steal from the user since they have less than `500 coins`**"
+  STEAL_USER_NO_MONEY: "❌ **The user does not have enough money to be robbed!**"
+  SUCCESSFULY_STOLEN: "✅ **You have stolen `<amount> coins` to `<userTag>`**"
+  ROB_COOLDOWN: "🕑 **You have to wait `<time>` to steal a user!**"
+  WITHDRAW_INVALID_AMOUNT: "❌ **You have not specified a valid amount to withdraw!**"
+  WITHDRAW_NO_MONEY: "❌ **You don't have that much money to take out!**"
+  SUCCESFULLY_WITHDRAW: "✅ **You have withdrawn `<amount> coins` from your bank!**"
+  WORK_COOLDOWN: "🕑 **You have to wait `<time>` to go back to work!**"
+  WORK_WORKED: "✅ **You have worked as `<work>` and you have received a reward from `<money> coins`!**"
+  SLOT_WIN: "<userMention> bet **<amount>** coins on the slot machine and won!"
+  SLOT_LOST: "<userMention> bet **<amount>** coins on the slot machine and lost!"
+  SLOT_BET: "<userMention> bet **<amount>** coins on the slot machine!"
+
+##########################################
+#             Levels Messages            #
+##########################################
+
+LEVEL_SYSTEM:
+  NEW_LEVEL: "Congratulations <userTag> you reached level **<level>!**\n" # <userTag> <level> <xp> 

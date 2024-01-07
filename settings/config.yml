@@ -1,0 +1,389 @@
+# Raven Bot 1.0.3 Configuration File
+# by bycoquito
+
+##########################################
+#                 GENERAL                #
+##########################################
+
+# LICENSE KEY
+LICENSE_KEY: "THX7I-X2SIT-XPKCO-YKEW8-IRW1B"
+
+# BOT PREFIX
+PREFIX: "r!"
+
+# BOTNAME
+BOTNAME: "Raven Bot"
+
+# SERVER_NAME | Minecraft Server Name (Minecraft Server Only)
+SERVER_NAME: "Raven Network" # Minecraft Server Only
+
+# EMBEDCOLOR | Bot embed color
+EMBEDCOLOR: "AQUA"
+
+# OWNER-NAME | YOUR DISCORD NAME
+OWNERNAME: "bycoquito" # Your discord name
+
+# OWNER-ID | YOUR DISCORD ID
+OWNERID: "1072256782765928549" 
+
+# TOKEN | Discord Bot Token
+TOKEN: 'MTA3MzM1Mzk3NTM0NjIzNzU5Mg.G9odIr.S0raZOE-Xk2bftYhjlMAOlie9a2NuHn4okAWYY'
+
+# GUILD-ID | Discord Server ID.
+GUILDID: '1110721106513494126'
+
+# DATABASE | If you do not know how to get the url look at the guide.
+mongooseConnectionString: 'mongodb+srv://Chander:33089415@cluster0.huhhjv1.mongodb.net/?retryWrites=true&w=majority'
+
+##########################################
+#             Activity Config            #
+##########################################
+
+ACTIVITY:
+  ACTIVITIES:  # Placeholders 
+    ACTIVITY1: "Raven Bot"
+    ACTIVITY2: ".gg/RavenSolutions"
+    ACTIVITY3: "Raven Solutions"
+    ACTIVITYTYPE1: "PLAYING"
+    ACTIVITYTYPE2: "WATCHING"
+    ACTIVITYTYPE3: "COMPETING"
+    STATUS: "DND"
+    INTERVAL: "3500" # ms
+
+##########################################
+#           Ticket Settings              #
+##########################################
+
+TICKET:
+  # Set it to true if you want to activate the one button panel.
+  ONE_BUTTON_TICKETS: false 
+
+  # Set it to true if you want to activate ticket-reason when opening a ticket.
+  REASON_ENABLED: false
+
+  # Set it to true if you want to activate ticket-logs.
+  LOGS_SYSTEM: false
+
+  # Set it to true if you want to activate ticket-review system.
+  TICKET_REVIEW_ENABLED: true # DO NOT DISABLE
+
+  # Set it to true if you want to activate ticket-review-logs.
+  TICKET_REVIEW_LOGS_ENABLED: false
+
+  # Set it to true if you want to activate ticket-counter.
+  TICKET_COUNTER_ENABLED: false
+
+  # Set it to true if you want only staff to close tickets
+  CLOSE_ONLY_SUPPORT: false
+
+  # Ticket-review logs channel.
+  TICKET_REVIEW_LOGS_CHANNEL: "TICKET_REVIEW_LOGS_CHANNEL"
+
+  # Where the tickets of the one button panel will be opened.
+  ONE_BUTTON_CATEGORY: "ONE_BUTTON_CATEGORY" 
+
+  # Server Name
+  SERVER-NAME: Raven Bot
+
+  # Ticket logs channel.
+  LOGS_CHANNEL: "LOGS_CHANNEL"
+
+  # Ticket Transcript Channel.
+  TRANSCRIPT_CHANNEL: "TRANSCRIPT_CHANNEL"
+
+  # Support Role.
+  SUPPORT_ROLE: "SUPPORT_ROLE"
+
+  # Admin Role.
+  ADMIN_ROLE: "ADMIN_ROLE" 
+
+  # Ticket Access Role.
+  TICKET_ACCESS_ROLE: "TICKET_ACCESS_ROLE" # Required for one button category
+
+##########################################
+#         BlacklistWords Settings        #
+##########################################
+
+BLACKLIST_WORDS:
+  
+  # Set it to true if you want to activate BlackList-Words.
+  ENABLED: false
+
+  # Bypass/Whitelist roles.
+  WHITELIST_ROLES:
+  - "ROLE ID 1" 
+  - "ROLE ID 2"
+
+##########################################
+#          Giveaway Settings             #
+##########################################
+
+GIVEAWAYS:
+  BOTS_CAN_WIN: false
+  EMBED_COLOR: "WHITE"
+  EMBED_COLOR_END: "RED"
+  EMBED_COLOR_PAUSED: "YELLOW"
+  REROLL_WINNERS: 1
+  LAST_CHANCE: "false"
+  LAST_CHANCE_COLOR: "YELLOW"
+  REACTION: "🎉"
+
+##########################################
+#            Economy System              #
+##########################################
+
+ECONOMY:
+  ENABLED: false
+  WORKS: ["Driver", "Waiter", "Programmer", "Singer"]
+
+  # Cooldown of the work command (Minutes).
+  WORK_COOLDOWN: 3 
+
+  # Minimum money required to steal.
+  STOLEN_MIN_MONEY: 500
+
+  # Slot Machine Emojis.
+  SLOT_EMOJIS: ["💍", "🪐" ,"⛵"] # MAX 3
+
+  # Slot Machine Default Emoji.
+  SLOT_EMOJI: "💵"
+
+  # Leaderboard Medals
+  LEADERBOARD_MEDALS:   
+    - "🥇"
+    - "🥈"
+    - "🥉"
+
+##########################################
+#             Level Settings             #
+##########################################
+
+LEVEL_SYSTEM: 
+  ENABLED: false
+
+  # A random number of xp will be added to users who write depending on the number you put.
+  XP_ADD: 10 # ADD XP Random (1 - 10)
+
+  # When reaching this amount of xp the user will level up.
+  XP_LIMIT: 300
+
+##########################################
+#            Music Settings              #
+##########################################
+
+MUSIC_SYSTEM:
+  LEAVE_ON_EMPTY: false
+  LEAVE_ON_FINISH: false
+  LEAVE_ON_END: false
+
+##########################################
+#            Anti-Raid Settings          #
+##########################################
+
+ANTI_RAID: # WARNING: Check that the bot has a higher role than other people, otherwise it could fail.
+  ENABLED: false
+  ANTI_JOIN_BOTS: true
+  BYPASS_ROLES: [] # Roles ID Example ['948794255676166154']
+  BYPASS_USERS: ['1072256782765928549', '944622203792658485'] # User ID Example ['1072256782765928549']
+  SANCTION: 'kick' # removeAllRoles & ban & kick
+  REASON: 'Raven Anti-Raid System'
+  SETTINGS: [ "channelDelete", "roleCreate", "roleDelete", "threadCreate", "threadDelete", ] # channelDelete, roleCreate, roleDelete, threadCreate, threadDelete
+  MAX_ACTIONS: '2'  # Max Actions per Time
+  TIME: '30000' # Time in ms
+  
+##########################################
+#           Password Settings            #
+##########################################
+
+PASSWORD:
+  SEND_ALERT: false # Send alerts to server owner
+
+##########################################
+#          Error Logging Settings        #
+##########################################
+
+ERROR_LOGGING:
+  ENABLED: false
+  WEBHOOK_URL: "WEBHOOK_URL"
+
+##########################################
+#        Virus-Total Settings            #
+##########################################
+
+VIRUS_TOTAL:
+  ENABLED: false
+  API_KEY: "YOUR-VIRUS_TOTAL-API_KEY"
+
+##########################################
+#          Role-Nickname Settings        #
+##########################################
+
+ROLE_NICKNAME:
+  ENABLED: false
+  PREFIX: "[<roleName>] <userName>"
+  
+##########################################
+#         Welcome/Leave Settings         #
+##########################################
+
+JOIN_ROLES:
+  ENABLED: false
+  ROLES: 
+  - "ROLE-1"
+  - "ROLE-2"
+
+WELCOME_SYSTEM:
+  ENABLED: false
+  CHANNEL: "WELCOME-CHANNEL-ID"
+  MESSAGE_EMBED: # Placeholders {user-tag) example: rtx#3317 {user-mention} example: @rtx#3317 {member-count} {server-name} {user-id}
+    TITLE: "**Welcome {user-tag}**"
+    DESCRIPTION: "Hello {user-mention}, Welcome to {server-name}\n\nWith you we are now: **{member-count} members**\nMember ID: **{member-id}**"
+    FOOTER: "{server-name} | Welcomes"
+
+LEAVE_SYSTEM:
+  ENABLED: false
+  CHANNEL: "LEAVE-CHANNEL-ID"
+  MESSAGE_EMBED:
+    TITLE: "**Goodbye {user-tag}**"
+    DESCRIPTION: "Goodbye {user-mention}, thanks for being part of the community.\n\nWe are now **{member-count}** members\nMember ID: **{member-id}**"
+    FOOTER: "{server-name} | Leaves"
+
+##########################################
+#             Verify Settings            #
+##########################################
+
+VERIFY_SYSTEM: 
+  ENABLED: false
+  ROLES: 
+  - "ROLE-1"
+  - "ROLE-2"
+  EMBED_CONFIG:
+    TITLE: "Raven | Verify"
+    DESCRIPTION: "To verify yourself and be able to see all the channels click on the button!"
+    FOOTER: "If you can't verify yourself, contact a staff"
+    BANNER: "https://images-ext-2.discordapp.net/external/sAxfSz7vTKZzuVNqAPWVrAsWOSEe_NAFVxobjHZd9Oc/https/media.discordapp.net/attachments/859542371692052500/949906479908020255/standard.gif"
+  BUTTON:
+    LABEL: "Verify"
+    STYLE: "PRIMARY" 
+    EMOJI: "✅"
+  
+
+##########################################
+#            Suggest Settings            #
+##########################################
+
+SUGGEST_SYSTEM:
+  ENABLED: false
+  ACCEPT_REJECT_BUTTONS: false
+  CHANNEL_ID: "CHANNEL_ID"
+  EMOJIS: 
+    UPVOTE: "⬆️"
+    DOWNVOTE: "⬇️"
+    VOTES: "❓"
+
+##########################################
+#         Bug Report Settings            #
+##########################################
+
+BUG_REPORT:
+  ENABLED: false
+  CHANNEL_ID: "CHANNEL_ID"
+  BUTTON:
+    STYLE: "DANGER"
+    EMOJI: "🚨"
+    LABEL: "Report" 
+  EMBED:
+    TITLE: "Raven Bot | Bug Reports"
+    DESCRIPTION: "If you find a Bug on the server, you can report it here.\n\nTo send a Bug Report, click on the button!"
+    FOOTER: "If you have some problem doing a Bug Report, please contact with a Staff member."
+
+
+##########################################
+#            8Ball Settings              #
+##########################################
+    
+    
+BALL: 
+  CONFIG: ["Yes", "No", "Maybe", "Obviusly", "I do not know"]
+
+##########################################
+#        Reaction Roles Settings         #
+##########################################
+
+REACTION_ROLES:
+  ENABLED: false
+  EMBED_CONFIG:
+    TITLE: "Raven | Reaction Roles"
+    DESCRIPTION: "To avoid the saturation of Tags, we have implemented a role system so that you can decide which alerts to receive.\n\nTo do this, you must click on the menu and select the role you want."
+    FOOTER: ""
+    COLOR: "PURPLE"
+
+
+
+##########################################
+#               Logs Settings            #
+##########################################
+
+LOGS_SYSTEM:
+  LOG_ENABLED: false
+  LOGS_CHANNEL: "LOGS-CHANNEL-ID"
+  ENABLED:
+    - "MessageEdited"
+    - "MessageDeleted"
+    - "channelCreate"
+    - "channelDelete"
+    - "guildBanAdd"
+    - "guildBanRemove"
+
+##########################################
+#           Commands Settings            #
+##########################################
+
+DISABLE_COMMANDS:
+  DISABLED:
+    - ""
+    - ""
+
+##########################################
+#       Auto-Voice Rooms Settings        #
+##########################################
+
+AUTO_VC:
+  ENABLED: false
+  CHANNEL_NAME: "<userName>-private" # Placeholders: <userName>
+  CHANNEL_ID: "AUTO_VC-CHANNEL-ID" 
+  CATEGORY_ID: "CATEGORY-CHANNELS-ID"
+  
+
+##########################################
+#        Minecraft Commands              #
+##########################################
+
+MINECRAFT:
+  ENABLED:
+    STORE: true
+    IP: true
+    TEAMSPEAK: true
+    SKIN: true
+
+##########################################
+#            Media Commands              #
+##########################################
+
+STREAM: 
+  ENABLED: false
+  STREAM_CHANNEL: "STREAM-CHANNEL-ID"
+  ACCESS_ROLES: 
+    - "EXAMPLE ROLE 1"
+
+VIDEO:
+  ENABLED: false
+  VIDEO_CHANNEL: "VIDEO-CHANNEL-ID"
+  ACCESS_ROLES:
+    - "EXAMPLE ROLE 1"
+
+##########################################
+#        Raven Bot By bycoquito          #
+#           Raven Solutions              #
+##########################################
+
