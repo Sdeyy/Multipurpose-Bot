@@ -14,7 +14,7 @@ DISABLED_COMMAND: "This command is disabled."
 TICKET: 
   NO_PERMS: "You **DO NOT** have permission to use this feature"
   TICKET_CLOSED_BY: "The ticket was closed by"
-  TICKET_CREATING: "Creating ticket...."
+  TICKET_CREATING: "Creating ticket..."
   ONE_BUTTON_TICKET_CREATING: "The category has been selected successfully..."
   ONE_BUTTON_TICKET_DISABLED: "This ticket panel is currently disabled."
   TICKET_CREATED: "Ticket Created <channel>" # Placeholders <channel>
